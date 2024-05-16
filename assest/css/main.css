@@ -1,0 +1,49 @@
+@import './base.css';
+.header{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+}
+.nav ul{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+.header .nav a{
+    color: #101828;
+}
+.header .logo img{
+    width: 35px;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.header .logo a{
+    color: var(--mainColor);
+}
+.active{
+    font-weight: 900;
+}
+.header .auth a{
+    padding: 7px 25px;
+    border-radius: 5px;
+    font-family: var(--subFont);
+}
+.header .auth a:first-of-type{
+    border: 1px var(--mainColor) solid;
+    color: var(--mainColor);
+}
+.header .auth a:last-of-type{
+    background-color: var(--mainColor);
+    color: #fff;
+}
+@media (max-width:1100px){
+    .nav{
+        display: none;
+    }
+}
