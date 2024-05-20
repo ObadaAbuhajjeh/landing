@@ -6,6 +6,7 @@
     position: sticky;
     top: 0;
     padding: 20px 0;
+    background-color: #fff;
 }
 .nav ul{
     display: flex;
@@ -50,6 +51,65 @@
 }
 /*end header*/
 
+/*start testimonials*/
+.testimonials{
+    text-align: center;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.testimonials .row{
+    gap: 40px;
+}
+.testimonial{
+    width: calc( (100% - 40px) / 2 );
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    box-shadow: 0px 14.23719596862793px 8.23719596862793px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.testimonial:after{
+    content: '';
+    border-top: #707377 solid 30px;
+    border-right: #707377 solid 30px;
+    border-bottom: transparent solid 30px;
+    border-left: transparent solid 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.testimonial .user-info img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.testimonial .user-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.testimonial .user-info .user-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.testimonial .user-data span{
+    font-size: 12px;
+    color: #969696;
+}
+.testimonial .rating img{
+    width: 25px;
+}
+/*end testimonials*/
+
 /*start footer*/
 .footer{
     background-color: #393E46;
@@ -70,7 +130,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 35px;
 }
 .footer .footer-start .logo-footer{
     display: flex;
@@ -114,6 +174,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
 }
 /*end footer*/
