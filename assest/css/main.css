@@ -66,6 +66,112 @@
 }
 /*end header*/
 
+/*start find course*/
+
+.find-course{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.find-course .row{
+    gap: 50px;
+}
+.find-course .register{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+.register .lets-begins{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.register .lets-begins .lets{
+    font-family: var(--subFont);
+    color: #545be8;
+    font-weight: 200;
+    font-size: 18px;
+}
+.register .lets-begins .begin{
+    font-family: var(--subFont);
+    color: #545be8;
+    font-size: 18px;
+    font-weight: 500;
+}
+.register h3{
+    font-weight: 700;
+    line-height: 160px;
+    font-size: 50px;
+}
+.register h3 .course{
+    color: var(--mainColor);
+}
+.register p{
+    color: #969696;
+    font-weight: 400;
+    font-size: 18px;
+}
+.reg-bar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+.register .reg-bar .reg{
+    color: #fff;
+    background-color: #545be8;
+    padding: 7px 30px;
+    border-radius: 7px;
+    font-size: 15px;
+}
+.reg-bar .play-video img{
+    width: 25px;
+    height: 25px;
+}
+.reg-bar .play-video .play-vid{
+    font-family: var(--subFont);
+    font-size: 15px;
+}
+.play-video{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+.find-course .register,
+.find-course .img-find-course{
+    width: calc( (100% - 50px) / 2 );
+}
+.find-course .img-find-course img{
+    width: 400px;
+    height: 400px;
+    
+}
+@media (max-width:870px){
+    .find-course .register{
+        width: 100%;
+    }
+    .find-course .img-find-course{
+        width: 100%;
+    }
+}
+@media (max-width:650px){
+    .find-course .register h3{
+        font-size: 20px;
+    }
+}
+@media (max-width:470px){
+    .find-course .img-find-course img{
+        width: 250px;
+        height: 250px;
+        align-items: flex-start;
+    }
+}
+
+/*end find course*/
+
 /*start selected-courses*/
 
 .selected-courses{
