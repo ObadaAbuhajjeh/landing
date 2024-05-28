@@ -66,6 +66,96 @@
 }
 /*end header*/
 
+/*start selected-courses*/
+
+.selected-courses{
+    background: linear-gradient(180deg, #545be8 0%, #272db0 100%);
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.selected-courses .row{
+    gap: 30px;
+}
+.selected-start img{
+    width: 400px;
+    height: 400px;
+}
+.selected-courses .selected-start,
+.selected-courses .selected-end{
+    width: calc( (100% - 30px) / 2);
+}
+.selected-courses .selected-end{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.selected-end .top-span{
+    color: #f0c932;
+    font-weight: 200;
+    line-height: 8px;
+    font-size: 14px;
+    font-family: var(--subFont);
+}
+.selected-end h3{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 60px;
+}
+.selected-end p{
+    color: #ddd;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 45px;
+}
+.bottom-spans{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bottom-spans .special-span{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+.bottom-spans .special-span .num-span{
+    font-family: var(--subFont);
+    color: #f0c932;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+}
+.bottom-spans .special-span .details-span{
+    font-family: var(--subFont);
+    color: #ddd;
+    font-weight: 400;
+    font-size: 12px;
+}
+@media (max-width:950px){
+    .selected-courses .selected-start{
+        width: 200%;
+    }
+    .selected-courses .selected-end{
+        width: 100%;
+    }
+}
+@media (max-width:500px){
+    .selected-courses .selected-start img{
+        width: 250px;
+        height: 350px;
+    }
+    .selected-courses .selected-end{
+        text-align: center;
+    }
+}
+
+/*end selected-courses*/
+
 /*start courses*/
 .courses{
     padding: 30px 0;
@@ -170,6 +260,16 @@
     }
     .course-desc{
         width: 100%;
+    }
+}
+@media (max-width:700px){
+    .course-desc{
+        width: 100%;
+        text-align: center;
+    }
+    .course-desc h2{
+        width: 100%;
+        text-align: center;
     }
 }
 @media (max-width:700px){
