@@ -247,6 +247,14 @@
         width: 100%;
     }
 }
+@media (max-width:900px){
+    .benefits-course .benefits-info{
+        text-align: center;
+    }
+    .benefits-course .benefits-desc{
+        margin: auto;
+    }
+}
 
 /*end benefits-courses*/
 
@@ -355,7 +363,7 @@
     width: 100%;
     filter: brightness(75%);
 }
-.corses-items{
+.courses-items{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -446,7 +454,7 @@
         width: 100%;
     }
 }
-@media (max-width:700px){
+@media (max-width:1100px){
     .course-desc{
         width: 100%;
         text-align: center;
@@ -454,6 +462,9 @@
     .course-desc h2{
         width: 100%;
         text-align: center;
+    }
+    .courses .courses-items .course .courses-type img{
+        width: 220%;
     }
 }
 @media (max-width:700px){
