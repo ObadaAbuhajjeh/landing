@@ -102,7 +102,7 @@
 }
 .register h3{
     font-weight: 700;
-    line-height: 160px;
+    line-height: 60px;
     font-size: 50px;
 }
 .register h3 .course{
@@ -171,6 +171,84 @@
 }
 
 /*end find course*/
+
+/*start benefits-courses*/
+
+.benefits-course{
+    background-color: #f5f5f5;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.benefits-course .row{
+    gap: 20px;
+}
+.benefits-course .benefits-info,
+.benefits-course .benefit-details{
+    width: calc( (100% - 20px) / 2 );
+}
+.benefits-course .benefits-info span{
+    color: var(--mainColor);
+    font-family: var(--subFont);
+    font-weight: 400;
+    font-size: 18px;
+}
+.benefits-course .benefits-info h3{
+    color: #131e31;
+    font-weight: 700;
+    line-height: 50px
+}
+.benefits-course .benefits-info p{
+    color: #969696;
+    font-weight: 400;
+}
+.benefits-course .benefits-desc{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.benefits-course .benefits-desc .benefit-details{
+    background-color: #545be8;
+    border-radius: 8px;
+    padding: 15px 15px;
+    width: 200px;
+    height: 200px;
+}
+.benefits-course .benefits-info{
+    width: 23%;
+}
+.benefits-course .benefits-desc{
+    width: 75%;
+}
+.benefits-course .benefits-desc .benefit-details img{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.benefits-course .benefits-desc .benefit-details h4{
+    font-family: var(--subFont);
+    font-weight: 700;
+    line-height: 20px;
+    color: #fff;
+}
+.benefits-course .benefits-desc .benefit-details p{
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 10px;
+    color: #ddd;
+}
+@media (max-width:700px){
+    .benefits-course .benefits-info{
+        width: 100%;
+    }
+    .benefits-course .benefits-desc{
+        width: 100%;
+    }
+}
+
+/*end benefits-courses*/
 
 /*start selected-courses*/
 
@@ -390,11 +468,11 @@
     .course-details span{
         display: none;
     }
-    @media (max-width:500px){
+}
+@media (max-width:500px){
         .course-details h3{
             font-size: 10px;
         }
-    }
 }
 /*end courses*/
 
